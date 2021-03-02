@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="projectStyleSheet.css" type="text/css">
+ </head>
+ <body>
+ <!-- color palette examples used from https://visme.co/blog/website-color-schemes/ -->
+ <!-- PLease note that much of the html and css is pieced together using examples from w3schools.com -->
+
+    <section id="navBar">
+      <nav class="horizontalBar">
+        <ul>
+          <li class="natPark"><a href="index.html">Home</a></li>
+          <li class="natPark"><a href="projectYosemite.html">Yosemite</a></li>
+          <li class="natPark"><a href="projectYellowstone.html">Yellowstone</a></li>
+          <li class="natPark"><a href="projectJoshuaTree.html">Joshua Tree</a></li>
+          <li class="quiz" style="float: right;"><a href="quiz.html">Survey</a></li>
+  	    </ul>
+      </nav>
+    </section>
+
+    <div class="item active">
+        <img src="yoesmite.jpg" alt="Yosemite National Park" class="headPic">
+    </div>
+
+    <section class="bodyText">
+      <h1 class="parkName">Yosemite National Park</h1>
+      <p class="parkInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At imperdiet dui accumsan sit amet. Est lorem ipsum dolor sit amet. Egestas congue quisque egestas diam in arcu cursus euismod. At urna condimentum mattis pellentesque id nibh tortor id. Ornare quam viverra orci sagittis eu volutpat odio. Nullam eget felis eget nunc lobortis mattis. Ac odio tempor orci dapibus ultrices in iaculis nunc. Ut porttitor leo a diam sollicitudin tempor id eu. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Urna nunc id cursus metus. Facilisi cras fermentum odio eu feugiat pretium. Neque convallis a cras semper. Dolor morbi non arcu risus. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper. Senectus et netus et malesuada fames ac turpis egestas sed. Egestas congue quisque egestas diam in. Dictum varius duis at consectetur lorem donec.
+      </p>
+      <br>
+ <!-- all of the sub pages have the same structure, a blurb of info then additional resources and a piece of trivia-->
+
+      <button onclick="listAppear()">For additional resources, click buttton!</button>
+      <div id="otherResources" class="myDiv">
+        <ul class="resources">
+          <li>This is going to be a fun fact about yoesmite</li>
+          <li>This is going to be a fun fact about yoesmite</li>
+        </ul>
+      </div>
+      <br>
+      <br>
+        <p class="fact">Here is going to be an interesting trivia fact in the form of true or false</p>
+        <button onclick="trueFalseAppear()" class="triviaButton">True or False?</button>
+      <div id="trivia" class="trivia">
+        <p>This is the answer to the above question</p>
+      </div>
+
+    </section>
+    <script type="text/javascript" src="webProject.js"></script>
+ </body>
+</html>

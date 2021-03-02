@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="projectStyleSheet.css" type="text/css">
+ </head>
+ <body>
+ <!-- color palette examples used from https://visme.co/blog/website-color-schemes/ -->
+ <!-- PLease note that much of the html and css is pieced together using examples from w3schools.com -->
+    <section id="navBar">
+      <nav class="horizontalBar">
+        <ul>
+          <li class="natPark"><a href="index.html">Home</a></li>
+          <li class="natPark"><a href="projectYosemite.html">Yosemite</a></li>
+          <li class="natPark"><a href="projectYellowstone.html">Yellowstone</a></li>
+          <li class="natPark"><a href="projectJoshuaTree.html">Joshua Tree</a></li>
+          <li class="quiz" style="float: right;"><a href="quiz.html">Survey</a></li>
+  	    </ul>
+      </nav>  	
+    </section>
+    <section id="webForm">
+      <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+        <fieldset>
+          <legend>Information: </legend>
+          <label>Name: 
+            <input type="text" name="name" size="30" maxlength="30">
+          </label>
+          <label>Email:
+            <input type="text" name="email" size="30">
+          </label>
+          <p>Which park are you most interested in?</p>
+          <label>
+            <input type="radio" name="favorite" value="yosemite">Yosemite
+          </label>
+          <label>
+            <input type="radio" name="favorite" value="yellowstone">Yellowstone
+          </label>
+          <label>
+            <input type="radio" name="favorite" value="joshueTree">Joshua Tree
+          </label>
+          <p>Which park are you least interested in?</p>
+          <label>
+            <input type="radio" name="worst" value="yosemite">Yosemite
+          </label>
+          <label>
+            <input type="radio" name="worst" value="yellowstone">Yellowstone
+          </label>
+          <label>
+            <input type="radio" name="worst" value="joshueTree">Joshua Tree
+          </label>
+          <input type="submit" value="Submit review" />
+        </fieldset> 
+      </form>
+      <br>
+      <div style="height:100px;width:40%;border:1px solid #ccc; overflow:auto;">For a quick note from the creator of the website, click the button below. The file will be downloaded as a PDF. If you would like to gain additional information on the national parks displayed on the site, please click the buttons at the bottom of each web page that will display a series of links to outside resources. Please take the time to submit the above survey so we can look at the feedback. I hope this site encourages you to take a step outside and apprecited the natural beauty that surrounds us. Thank you!</div>
+      <br>
+        <form method="get" action="myFavoritePark.pdf">
+          <button type="submit">Click to download a message from the site creator!</button>
+        </form>
+
+
+    </section>
+ </body>
+</html>
